@@ -13,6 +13,7 @@ body,
 
 nav {
   width: 80%;
+  height: 75px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -21,10 +22,27 @@ nav .navbar-brand span {
   font-weight: bold;
 }
 
+nav .nav-link {
+  text-transform: uppercase;
+}
+
+nav .nav-link:hover {
+  border-bottom: 2px solid #333;
+}
+
 #banner {
   margin: 0;
   padding: 0;
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   min-height: 100vh;
   background: url(/images/header.jpg) no-repeat center;
   background-size: initial;
@@ -32,7 +50,6 @@ nav .navbar-brand span {
 }
 
 #banner .col-12 {
-  margin-top: 3%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -74,37 +91,7 @@ nav .navbar-brand span {
   vertical-align: middle;
 }
 
-main #about {
-  background: #DC3545;
-  border-top: 10px solid #333;
-}
-
-main #about img {
-  margin: auto 0;
-  max-width: 100%;
-  height: auto;
-  -o-object-fit: inherit;
-     object-fit: inherit;
-  border-bottom-right-radius: 0.5em;
-}
-
-main #about h1 {
-  color: white;
-  height: auto;
-  text-align: center;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10%;
-  border: 0;
-}
-
-main #about hr {
-  width: 40%;
-  border-bottom: 2px solid white;
-}
-
-main #about #aboutDescription {
+main .sectionContent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -120,24 +107,70 @@ main #about #aboutDescription {
           align-items: center;
 }
 
-main #about #aboutDescription p {
+main .sectionContent h1 {
+  color: white;
+  height: auto;
+  text-align: center;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  border: 0;
+}
+
+main .sectionContent hr {
+  width: 40%;
+  border-bottom: 2px solid white;
+}
+
+main .sectionContent .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .sectionContent .description p {
   color: #ccc;
   width: 70%;
   text-align: justify;
+  margin-bottom: 25px;
 }
 
-main #about #aboutDescription a {
+main .sectionContent .description a {
   margin-bottom: 20px;
 }
 
-main #about #aboutDescription a:hover {
+main .sectionContent .description a:hover {
   background: white;
   border: 1px solid #333;
   color: #333;
   font-weight: bold;
 }
 
-main #about #border_bottom {
+main #about {
+  background: #DC3545;
+}
+
+main #about img {
+  margin: auto 0;
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: inherit;
+     object-fit: inherit;
+  border-bottom-right-radius: 0.5em;
+}
+
+main #border_bottom {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -154,12 +187,17 @@ main #about #border_bottom {
   margin-bottom: 0;
 }
 
+main #expectations {
+  background: #e27145;
+}
+
+main #expectations p {
+  color: #eee;
+}
+
 @media only screen and (min-width: 992px) {
   .nav-item {
     margin-left: 3.5em;
-  }
-  #banner .col-12 {
-    margin-top: 12%;
   }
   #banner .col-12 h1 {
     font-size: 3.5rem;

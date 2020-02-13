@@ -23,12 +23,22 @@ body,
 // --------- NAV ---------
 nav {
     width: 80%;
+    height: 75px;
     margin-left: auto;
     margin-right: auto;
 
     .navbar-brand {
         span {
             font-weight: bold;
+        }
+    }
+
+    .nav-link{
+        text-transform: uppercase;
+
+        &:hover{
+            //font-weight: bold;
+            border-bottom: 2px solid #333;
         }
     }
 }
@@ -39,13 +49,15 @@ nav {
 
     @include basic;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     min-height: 100vh;
     background: url(/images/header.jpg) no-repeat center;
     background-size: initial;
     background-attachment: fixed;
 
     .col-12 {
-        margin-top: 3%;
         margin-left: auto;
         margin-right: auto;
 
@@ -87,18 +99,11 @@ nav {
 // --------- MAIN ---------
 main {
 
-    // --------- ABOUT ---------
-    #about {
-        background: $red;
-        border-top: 10px solid #333;
-
-        img {
-            margin: auto 0;
-            max-width: 100%;
-            height: auto;
-            object-fit: inherit;
-            border-bottom-right-radius: 0.5em;
-        }
+    .sectionContent{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
         h1 {
             color: white;
@@ -116,7 +121,7 @@ main {
             border-bottom: 2px solid white;
         }
 
-        #aboutDescription {
+        .description {
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -126,6 +131,7 @@ main {
                 color: #ccc;
                 width: 70%;
                 text-align: justify;
+                margin-bottom: 25px;
             }
 
             a {
@@ -140,6 +146,21 @@ main {
 
             }
         }
+    }
+
+    // --------- ABOUT ---------
+    #about {
+        background: $red;
+
+        img {
+            margin: auto 0;
+            max-width: 100%;
+            height: auto;
+            object-fit: inherit;
+            border-bottom-right-radius: 0.5em;
+        }
+    }
+       
 
         #border_bottom {
             display: flex;
@@ -151,6 +172,14 @@ main {
             border-top-right-radius: 1.5em;
             background: $red;
             margin-bottom: 0;
+        }
+    
+
+    #expectations{
+        background: #e27145;
+
+        p{
+            color: #eee;
         }
     }
 
@@ -166,7 +195,6 @@ main {
 
     #banner {
         .col-12 {
-            margin-top: 12%;
 
             h1 {
                 font-size: 3.5rem;
