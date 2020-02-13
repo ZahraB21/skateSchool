@@ -1,0 +1,181 @@
+@mixin basic {
+    margin: 0;
+    padding: 0;
+}
+
+// ------ Variables -------
+$red: #DC3545;
+
+// BASIC
+html,
+body,
+.container-fluid,
+.col-12,
+.col-xs-12,
+.col-sm-12,
+.col-md-12,
+.col-lg-12,
+.row {
+    @include basic;
+}
+
+
+// --------- NAV ---------
+nav {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+    .navbar-brand {
+        span {
+            font-weight: bold;
+        }
+    }
+}
+
+// --------- BANNER ---------
+
+#banner {
+
+    @include basic;
+    height: 100vh;
+    min-height: 100vh;
+    background: url(/images/header.jpg) no-repeat center;
+    background-size: initial;
+    background-attachment: fixed;
+
+    .col-12 {
+        margin-top: 3%;
+        margin-left: auto;
+        margin-right: auto;
+
+        h1,
+        h2 {
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            text-shadow: 3px 3px #333;
+
+            span {
+                color: $red;
+                text-shadow: 0.5px 0.5px #aaa;
+            }
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            text-shadow: 2px 2px #333;
+        }
+
+        #banner_buttons {
+            display: flex;
+            justify-content: center;
+
+            a.btn {
+                margin-left: 25px;
+                text-align: center;
+                vertical-align: middle;
+            }
+        }
+    }
+}
+
+// --------- MAIN ---------
+main {
+
+    // --------- ABOUT ---------
+    #about {
+        background: $red;
+        border-top: 10px solid #333;
+
+        img {
+            margin: auto 0;
+            max-width: 100%;
+            height: auto;
+            object-fit: inherit;
+            border-bottom-right-radius: 0.5em;
+        }
+
+        h1 {
+            color: white;
+            height: auto;
+            text-align: center;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10%;
+            border: 0;
+        }
+
+        hr {
+            width: 40%;
+            border-bottom: 2px solid white;
+        }
+
+        #aboutDescription {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            p {
+                color: #ccc;
+                width: 70%;
+                text-align: justify;
+            }
+
+            a {
+                margin-bottom: 20px;
+            }
+
+            a:hover {
+                background: white;
+                border: 1px solid #333;
+                color: #333;
+                font-weight: bold;
+
+            }
+        }
+
+        #border_bottom {
+            display: flex;
+            flex-direction: row;
+            width: 80%;
+            border-bottom: 100px solid #333;
+            margin-left: 0;
+            margin-top: 3.9%;
+            border-top-right-radius: 1.5em;
+            background: $red;
+            margin-bottom: 0;
+        }
+    }
+
+}
+
+
+// MEDIA QUERIES
+// @import 'media_queries'
+@media only screen and (min-width: 992px) {
+    .nav-item {
+        margin-left: 3.5em;
+    }
+
+    #banner {
+        .col-12 {
+            margin-top: 12%;
+
+            h1 {
+                font-size: 3.5rem;
+            }
+
+            h2 {
+                font-size: 2.5rem;
+            }
+        }
+
+    }
+}
