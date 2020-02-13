@@ -6,6 +6,7 @@ body,
 .col-sm-12,
 .col-md-12,
 .col-lg-12,
+.col-lg-6,
 .row {
   margin: 0;
   padding: 0;
@@ -105,6 +106,7 @@ main .sectionContent {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: auto 0;
 }
 
 main .sectionContent h1 {
@@ -147,7 +149,7 @@ main .sectionContent .description p {
 }
 
 main .sectionContent .description a {
-  margin-bottom: 20px;
+  margin-bottom: 10%;
 }
 
 main .sectionContent .description a:hover {
@@ -161,16 +163,11 @@ main #about {
   background: #DC3545;
 }
 
-main #about img {
-  margin: auto 0;
-  max-width: 100%;
-  height: auto;
-  -o-object-fit: inherit;
-     object-fit: inherit;
-  border-bottom-right-radius: 0.5em;
+main #about .sectionContent a {
+  margin-top: 25px;
 }
 
-main #border_bottom {
+main #about #border_bottom {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -195,6 +192,27 @@ main #expectations p {
   color: #eee;
 }
 
+main #contact {
+  background: #333;
+}
+
+main #contact #contactForm {
+  width: 80%;
+  height: auto;
+  padding-bottom: 70px;
+}
+
+main #contact #contactForm label {
+  color: white;
+}
+
+main #contact #contactForm button:hover {
+  background: #DC3545;
+  color: white;
+  border: 0;
+  font-weight: bold;
+}
+
 @media only screen and (min-width: 992px) {
   .nav-item {
     margin-left: 3.5em;
@@ -204,6 +222,30 @@ main #expectations p {
   }
   #banner .col-12 h2 {
     font-size: 2.5rem;
+  }
+  main #about .sectionContent {
+    height: 85vh;
+  }
+  main #about img {
+    border-bottom-left-radius: 1em;
+    height: 575px;
+    width: auto;
+    overflow: hidden;
+  }
+  main #expectations .row {
+    height: 100vh;
+  }
+  main #expectations .row img {
+    height: 100vh;
+    width: auto;
+  }
+  main #contact .row {
+    height: 110vh;
+    overflow: hidden;
+  }
+  main #contact .row img {
+    height: 110vh;
+    min-width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -15,6 +15,7 @@ body,
 .col-sm-12,
 .col-md-12,
 .col-lg-12,
+.col-lg-6,
 .row {
     @include basic;
 }
@@ -104,6 +105,7 @@ main {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin: auto 0;
 
         h1 {
             color: white;
@@ -135,7 +137,7 @@ main {
             }
 
             a {
-                margin-bottom: 20px;
+                margin-bottom: 10%;
             }
 
             a:hover {
@@ -151,17 +153,13 @@ main {
     // --------- ABOUT ---------
     #about {
         background: $red;
-
-        img {
-            margin: auto 0;
-            max-width: 100%;
-            height: auto;
-            object-fit: inherit;
-            border-bottom-right-radius: 0.5em;
+    
+        .sectionContent{
+            a{
+                margin-top: 25px;
+            }
         }
-    }
-       
-
+        
         #border_bottom {
             display: flex;
             flex-direction: row;
@@ -173,8 +171,11 @@ main {
             background: $red;
             margin-bottom: 0;
         }
-    
+    }
+       
 
+    
+    // --------- EXPECTATIONS ---------
     #expectations{
         background: #e27145;
 
@@ -183,11 +184,54 @@ main {
         }
     }
 
+    // --------- CONTACT ---------
+    #contact{
+        background: #333;
+
+        #contactForm{
+            width: 80%;
+            height: auto;
+            padding-bottom: 70px;
+                
+            label{
+                color: white;
+            }
+
+            button:hover{
+                background: $red;
+                color: white;
+                border: 0;
+                font-weight: bold;
+            }
+        }
+    }
 }
 
 
 // MEDIA QUERIES
 // @import 'media_queries'
+// @media only screen and (min-width: 992px) and (max-width: 1175px) {
+//     main{
+
+//         #about{
+//             img{
+//                 border-bottom-left-radius: 1em;
+//                 height: 500px;
+//                 width: auto;
+//                 overflow: hidden;
+//             }
+//         }
+
+//         #expectations{
+//             .sectionContent{
+//                 // min-height: 100vh;
+//             }
+//         }
+//     }
+
+// }
+
+
 @media only screen and (min-width: 992px) {
     .nav-item {
         margin-left: 3.5em;
@@ -205,5 +249,45 @@ main {
             }
         }
 
+    }
+
+    main{
+
+        #about{
+            .sectionContent{
+                height: 85vh;
+            }    
+
+            img{
+                border-bottom-left-radius: 1em;
+                height: 575px;
+                width: auto;
+                overflow: hidden;
+            }
+        }
+
+        #expectations{
+            .row{
+                height: 100vh;
+           
+                img{
+                    height: 100vh;
+                    width: auto;
+                }
+            }
+
+        }
+
+        #contact{
+            .row{
+                height: 110vh;
+                overflow: hidden;
+
+                img{
+                    height: 110vh;
+                     min-width: 100%;
+                }
+            }
+        }
     }
 }
