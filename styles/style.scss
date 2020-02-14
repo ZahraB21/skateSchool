@@ -20,7 +20,6 @@ body,
     @include basic;
 }
 
-
 // --------- NAV ---------
 nav {
     width: 80%;
@@ -182,6 +181,10 @@ main {
         p{
             color: #eee;
         }
+
+        img{
+            min-width: 100%;
+        }
     }
 
     // --------- CONTACT ---------
@@ -205,6 +208,45 @@ main {
             }
         }
     }
+
+    // --------- TRY A LESSON ---------
+    #try_lesson{
+        margin-top: 1.5%;
+
+        h1{
+            color:#333;
+            margin-bottom: 50px;
+            display: block;
+            margin: 6% auto 20px auto;
+            text-align: center;
+        }
+        h3{
+            text-align: center;
+            font-size: 1.5rem;
+        }
+
+        .form-group{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 80%;
+            margin: 3% auto;
+
+            .form-control{
+                width: 60%;
+                margin-right: 2%;
+            }
+        }
+
+
+        img{
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+    }
+    
 }
 
 
@@ -287,6 +329,15 @@ main {
                     height: 110vh;
                      min-width: 100%;
                 }
+            }
+        }
+
+        #try_lesson{
+            h3{
+                font-size: 1.75rem;
+            }
+            .form-control{
+                width: 40%;
             }
         }
     }

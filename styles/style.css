@@ -192,6 +192,10 @@ main #expectations p {
   color: #eee;
 }
 
+main #expectations img {
+  min-width: 100%;
+}
+
 main #contact {
   background: #333;
 }
@@ -211,6 +215,49 @@ main #contact #contactForm button:hover {
   color: white;
   border: 0;
   font-weight: bold;
+}
+
+main #try_lesson {
+  margin-top: 1.5%;
+}
+
+main #try_lesson h1 {
+  color: #333;
+  margin-bottom: 50px;
+  display: block;
+  margin: 6% auto 20px auto;
+  text-align: center;
+}
+
+main #try_lesson h3 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+main #try_lesson .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80%;
+  margin: 3% auto;
+}
+
+main #try_lesson .form-group .form-control {
+  width: 60%;
+  margin-right: 2%;
+}
+
+main #try_lesson img {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media only screen and (min-width: 992px) {
@@ -246,6 +293,12 @@ main #contact #contactForm button:hover {
   main #contact .row img {
     height: 110vh;
     min-width: 100%;
+  }
+  main #try_lesson h3 {
+    font-size: 1.75rem;
+  }
+  main #try_lesson .form-control {
+    width: 40%;
   }
 }
 /*# sourceMappingURL=style.css.map */
