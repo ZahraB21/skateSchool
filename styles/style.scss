@@ -99,12 +99,15 @@ nav {
 // --------- MAIN ---------
 main {
 
+    overflow: hidden;
+    
     .sectionContent{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         margin: auto 0;
+        height: 100vh;
 
         h1 {
             color: white;

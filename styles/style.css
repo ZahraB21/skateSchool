@@ -92,6 +92,10 @@ nav .nav-link:hover {
   vertical-align: middle;
 }
 
+main {
+  overflow: hidden;
+}
+
 main .sectionContent {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -107,6 +111,7 @@ main .sectionContent {
       -ms-flex-align: center;
           align-items: center;
   margin: auto 0;
+  height: 100vh;
 }
 
 main .sectionContent h1 {
