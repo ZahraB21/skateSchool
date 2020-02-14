@@ -264,6 +264,21 @@ main #try_lesson img {
   height: 100%;
 }
 
+footer .row {
+  height: 60px;
+  background: #333;
+  color: white;
+  text-align: center;
+}
+
+footer .row .col-6 {
+  margin: auto 0;
+}
+
+footer .row .col-6 p {
+  margin: 0;
+}
+
 @media only screen and (min-width: 992px) {
   .nav-item {
     margin-left: 3.5em;

@@ -260,6 +260,23 @@ main {
     
 }
 
+//--------- FOOTER ---------
+footer{
+    .row{
+        height: 60px;
+        background: #333;
+        color: white;
+        text-align: center;
+
+        .col-6{
+            margin: auto 0;
+
+            p{
+                margin: 0;
+            }
+        }
+    }
+}
 
 // MEDIA QUERIES
 // @import 'media_queries'
