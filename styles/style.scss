@@ -11,6 +11,7 @@ html,
 body,
 .container-fluid,
 .col-12,
+.col-6,
 .col-xs-12,
 .col-sm-12,
 .col-md-12,
@@ -262,9 +263,9 @@ main {
 
 //--------- FOOTER ---------
 footer{
+    background: #333;
     .row{
         height: 60px;
-        background: #333;
         color: white;
         text-align: center;
 
@@ -273,6 +274,8 @@ footer{
 
             p{
                 margin: 0;
+                padding: 5px 10px;
+                font-size: 0.8rem;
             }
         }
     }
@@ -367,6 +370,16 @@ footer{
             .form-control{
                 width: 40%;
             }
+        }
+    }
+
+    footer{
+        .row{
+            .col-6{
+                p{
+                    font-size: 1rem;
+                }
+            }       
         }
     }
 }

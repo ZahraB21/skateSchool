@@ -2,6 +2,7 @@ html,
 body,
 .container-fluid,
 .col-12,
+.col-6,
 .col-xs-12,
 .col-sm-12,
 .col-md-12,
@@ -264,9 +265,12 @@ main #try_lesson img {
   height: 100%;
 }
 
+footer {
+  background: #333;
+}
+
 footer .row {
   height: 60px;
-  background: #333;
   color: white;
   text-align: center;
 }
@@ -277,6 +281,8 @@ footer .row .col-6 {
 
 footer .row .col-6 p {
   margin: 0;
+  padding: 5px 10px;
+  font-size: 0.8rem;
 }
 
 @media only screen and (min-width: 992px) {
@@ -318,6 +324,9 @@ footer .row .col-6 p {
   }
   main #try_lesson .form-control {
     width: 40%;
+  }
+  footer .row .col-6 p {
+    font-size: 1rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
