@@ -1,5 +1,97 @@
-// @media only screen and (min-width: 992px) {
-//     .nav-item {
-//         margin-left: 3.5em;
-//     }
-// }
+@media only screen and (min-width: 992px) {
+    .navbar{
+        .navbar-brand{
+            margin-left: 50px;
+        }
+    }
+
+    .navbar-expand-lg .navbar-collapse{
+        justify-content: flex-end;
+    }
+
+    .navbar-nav{
+        justify-content: flex-end;
+        margin-right: 5%;
+    }
+
+    .nav-item {
+        margin-left: 3.5em;
+    }
+
+    nav .navbar-nav .nav-link:hover {
+        border: 0
+    }
+
+    #banner {
+        .col-12 {
+
+            h1 {
+                font-size: 3.5rem;
+            }
+
+            h2 {
+                font-size: 2.5rem;
+            }
+        }
+
+    }
+
+    main{
+
+        #about{
+            .sectionContent{
+                height: 85vh;
+            }    
+
+            img{
+                border-bottom-left-radius: 1em;
+                height: 575px;
+                width: auto;
+                overflow: hidden;
+            }
+        }
+
+        #expectations{
+            .row{
+                height: 100vh;
+           
+                img{
+                    height: 100vh;
+                    width: auto;
+                }
+            }
+
+        }
+
+        #contact{
+            .row{
+                height: 110vh;
+                overflow: hidden;
+
+                img{
+                    height: 110vh;
+                     min-width: 100%;
+                }
+            }
+        }
+
+        #try_lesson{
+            h3{
+                font-size: 1.75rem;
+            }
+            .form-control{
+                width: 40%;
+            }
+        }
+    }
+
+    footer{
+        .row{
+            .col-6{
+                p{
+                    font-size: 1rem;
+                }
+            }       
+        }
+    }
+}

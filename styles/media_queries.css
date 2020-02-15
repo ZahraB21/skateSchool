@@ -1,1 +1,62 @@
-/* No CSS *//*# sourceMappingURL=media_queries.css.map */
+@media only screen and (min-width: 992px) {
+  .navbar .navbar-brand {
+    margin-left: 50px;
+  }
+  .navbar-expand-lg .navbar-collapse {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .navbar-nav {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-right: 5%;
+  }
+  .nav-item {
+    margin-left: 3.5em;
+  }
+  nav .navbar-nav .nav-link:hover {
+    border: 0;
+  }
+  #banner .col-12 h1 {
+    font-size: 3.5rem;
+  }
+  #banner .col-12 h2 {
+    font-size: 2.5rem;
+  }
+  main #about .sectionContent {
+    height: 85vh;
+  }
+  main #about img {
+    border-bottom-left-radius: 1em;
+    height: 575px;
+    width: auto;
+    overflow: hidden;
+  }
+  main #expectations .row {
+    height: 100vh;
+  }
+  main #expectations .row img {
+    height: 100vh;
+    width: auto;
+  }
+  main #contact .row {
+    height: 110vh;
+    overflow: hidden;
+  }
+  main #contact .row img {
+    height: 110vh;
+    min-width: 100%;
+  }
+  main #try_lesson h3 {
+    font-size: 1.75rem;
+  }
+  main #try_lesson .form-control {
+    width: 40%;
+  }
+  footer .row .col-6 p {
+    font-size: 1rem;
+  }
+}
+/*# sourceMappingURL=media_queries.css.map */

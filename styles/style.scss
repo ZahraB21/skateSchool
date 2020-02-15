@@ -23,32 +23,46 @@ body,
 
 // --------- NAV ---------
 nav {
-    width: 80%;
-    height: 75px;
-    margin-left: auto;
-    margin-right: auto;
+    max-height: 60px;
+    padding: 0 !important;
+    position: absolute;
+    
+    .navbar{
+        padding: 0 !important;
+        width: 100%;
+    }
+    .navbar-toggler{
+        margin-right: 15px;
+    }
 
     .navbar-brand {
+        padding: 15px !important;
         span {
             font-weight: bold;
         }
     }
+      
+    .navbar-nav{
+            width: 100%;
+            padding-left: 15px;
+            padding-bottom: 10px;
 
-    .nav-link{
-        text-transform: uppercase;
-
-        &:hover{
-            //font-weight: bold;
-            border-bottom: 2px solid #333;
+            .nav-link{
+                text-transform: uppercase;
+        
+                &:hover{
+                    border-bottom: 2px dashed $red;
+                }
+            }
         }
-    }
+    
 }
 
 // --------- BANNER ---------
 
 #banner {
 
-    @include basic;
+    // @include basic;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -109,6 +123,7 @@ main {
         align-items: center;
         margin: auto 0;
         height: 100vh;
+        padding: 0;
 
         h1 {
             color: white;
@@ -231,6 +246,7 @@ main {
             h3{
                 text-align: center;
                 font-size: 1.5rem;
+                padding: 15px 20px;
             }
     
             .form-group{
@@ -282,104 +298,4 @@ footer{
 }
 
 // MEDIA QUERIES
-// @import 'media_queries'
-// @media only screen and (min-width: 992px) and (max-width: 1175px) {
-//     main{
-
-//         #about{
-//             img{
-//                 border-bottom-left-radius: 1em;
-//                 height: 500px;
-//                 width: auto;
-//                 overflow: hidden;
-//             }
-//         }
-
-//         #expectations{
-//             .sectionContent{
-//                 // min-height: 100vh;
-//             }
-//         }
-//     }
-
-// }
-
-
-@media only screen and (min-width: 992px) {
-    .nav-item {
-        margin-left: 3.5em;
-    }
-
-    #banner {
-        .col-12 {
-
-            h1 {
-                font-size: 3.5rem;
-            }
-
-            h2 {
-                font-size: 2.5rem;
-            }
-        }
-
-    }
-
-    main{
-
-        #about{
-            .sectionContent{
-                height: 85vh;
-            }    
-
-            img{
-                border-bottom-left-radius: 1em;
-                height: 575px;
-                width: auto;
-                overflow: hidden;
-            }
-        }
-
-        #expectations{
-            .row{
-                height: 100vh;
-           
-                img{
-                    height: 100vh;
-                    width: auto;
-                }
-            }
-
-        }
-
-        #contact{
-            .row{
-                height: 110vh;
-                overflow: hidden;
-
-                img{
-                    height: 110vh;
-                     min-width: 100%;
-                }
-            }
-        }
-
-        #try_lesson{
-            h3{
-                font-size: 1.75rem;
-            }
-            .form-control{
-                width: 40%;
-            }
-        }
-    }
-
-    footer{
-        .row{
-            .col-6{
-                p{
-                    font-size: 1rem;
-                }
-            }       
-        }
-    }
-}
+ @import 'media_queries'

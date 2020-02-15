@@ -14,27 +14,43 @@ body,
 }
 
 nav {
-  width: 80%;
-  height: 75px;
-  margin-left: auto;
-  margin-right: auto;
+  max-height: 60px;
+  padding: 0 !important;
+  position: absolute;
+}
+
+nav .navbar {
+  padding: 0 !important;
+  width: 100%;
+}
+
+nav .navbar-toggler {
+  margin-right: 15px;
+}
+
+nav .navbar-brand {
+  padding: 15px !important;
 }
 
 nav .navbar-brand span {
   font-weight: bold;
 }
 
-nav .nav-link {
+nav .navbar-nav {
+  width: 100%;
+  padding-left: 15px;
+  padding-bottom: 10px;
+}
+
+nav .navbar-nav .nav-link {
   text-transform: uppercase;
 }
 
-nav .nav-link:hover {
-  border-bottom: 2px solid #333;
+nav .navbar-nav .nav-link:hover {
+  border-bottom: 2px dashed #DC3545;
 }
 
 #banner {
-  margin: 0;
-  padding: 0;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -113,6 +129,7 @@ main .sectionContent {
           align-items: center;
   margin: auto 0;
   height: 100vh;
+  padding: 0;
 }
 
 main .sectionContent h1 {
@@ -240,6 +257,7 @@ main #try_lesson .sectionContent h1 {
 main #try_lesson .sectionContent h3 {
   text-align: center;
   font-size: 1.5rem;
+  padding: 15px 20px;
 }
 
 main #try_lesson .sectionContent .form-group {
@@ -286,8 +304,25 @@ footer .row .col-6 p {
 }
 
 @media only screen and (min-width: 992px) {
+  .navbar .navbar-brand {
+    margin-left: 50px;
+  }
+  .navbar-expand-lg .navbar-collapse {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .navbar-nav {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-right: 5%;
+  }
   .nav-item {
     margin-left: 3.5em;
+  }
+  nav .navbar-nav .nav-link:hover {
+    border: 0;
   }
   #banner .col-12 h1 {
     font-size: 3.5rem;
